@@ -1,0 +1,116 @@
+/* ============================= GLOBALE ============================= */
+
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap");
+
+/* ============================= SECTION RECETTE ============================= */
+#recette {
+  padding: 90px 6vw;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+#recette h1,
+#recette h2,
+#recette h3 {
+  font-family: "DynaPuff", cursive;
+}
+
+#recette h1 {
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  margin-bottom: 40px;
+}
+
+#recette p,
+#recette li {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+/* ============================= STRUCTURE DES RECETTES (FLEXBOX) ============================= */
+
+/* Chaque recette */
+#recette article.recette {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* Colonnes texte */
+#recette .recette__div {
+  flex: 1;
+}
+
+/* Colonne image */
+#recette .recette__image {
+  flex: 0 0 260px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================= IMAGES RECETTES ============================= */
+#recette img.recette__img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 14px;
+  transition: transform 0.25s ease;
+}
+
+#recette article.recette:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+#recette article.recette:nth-of-type(odd) img {
+  transform: rotate(5deg);
+}
+
+#recette article.recette:nth-of-type(even) img {
+  transform: rotate(-5deg);
+}
+
+#recette img.recette__img:hover {
+  transform: rotate(0deg);
+}
+
+/* ============================= MOBILE ============================= */
+@media (max-width: 900px) {
+  #recette article.recette {
+    flex-direction: column;
+  }
+
+  #recette article.recette:nth-of-type(even) {
+    flex-direction: column;
+  }
+
+  #recette .recette__image {
+    margin-top: 20px;
+  }
+}
+
+/* ============================= BOUTON HOME ============================= */
+.btn-home {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(6px);
+  filter: grayscale(1);
+  transition: filter 0.25s ease, transform 0.25s ease;
+  z-index: 9999;
+}
+
+.btn-home:hover {
+  filter: grayscale(0) saturate(1.3);
+  transform: translateY(-3px);
+}
+
+.btn-home svg {
+  width: 32px;
+  height: 32px;
+}

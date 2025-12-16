@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MangaVerse – TP2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/recette.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
+        >☰</label
+      >
+      <div class="logo">
+        <img src="images/favicon.png" alt="Logo MangaVerse" />
+        <span>MangaVerse</span>
+      </div>
+      <div class="desktop-menu" aria-label="Menu principal">
+        <a href="#accueil">Accueil</a>
+        <a href="#articles">Articles</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#video">Vidéo</a>
+        <a href="#github">GitHub</a>
+        <a href="#recette">Recette</a>
+
+        <a href="#inscription">Inscription</a>
+      </div>
+      <input
+        type="search"
+        class="search-bar"
+        placeholder="Rechercher..."
+        aria-label="Recherche"
+      />
+      <input type="checkbox" id="menu-toggle" />
+      <div class="menu" aria-label="Menu mobile">
+        <div class="menu-header">
+          <span>Menu</span>
+          <label
+            for="menu-toggle"
+            class="close-menu"
+            aria-label="Fermer le menu"
+            >✕</label
+          >
+        </div>
+        <a href="#accueil">Accueil</a>
+        <a href="#articles">Articles</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#video">Vidéo</a>
+        <a href="#github">GitHub</a>
+        <a href="#recette">Recette</a>
+
+        <a href="#inscription">Inscription</a>
+      </div>
+    </nav>
+    <header id="accueil" class="hero">
+      <div class="hero-content">
+        <h1>MangaVerse</h1>
+        <h2>TP2 – Mise en page Web</h2>
+        <h3>Axel Acosta</h3>
+
+        <p>
+          Techniques d’intégration multimédia<br />
+          Collège de Maisonneuve — Automne 2025
+        </p>
+
+        <a href="#inscription" class="btn-primary">S’inscrire</a>
+      </div>
+      <a href="#accueil" class="btn-home" aria-label="Retour à l'accueil">
+        <svg
+          data-src="https://s2.svgbox.net/hero-solid.svg?ic=home"
+          width="32"
+          height="32"
+          color="#000"
+        ></svg>
+      </a>
+    </header>
+    <section class="slider-section">
+      <div class="manga-slider">
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/chainsaw-man-cover.webp')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/chainsaw-man-cover.webp"
+              class="cover"
+              alt="Chainsaw Man"
+            />
+            <div class="info">
+              <h1>Chainsaw Man</h1>
+              <p>Denji renaît avec la puissance d’un démon tronçonneuse.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/jjk-cover.jpg')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/jjk-cover.jpg"
+              class="cover"
+              alt="Jujutsu Kaisen"
+            />
+            <div class="info">
+              <h1>Jujutsu Kaisen</h1>
+              <p>Yuji Itadori découvre le monde des fléaux.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="
+              background-image: url('images/Attack_on_Titan_No_Regrets,_volume_1.jpg');
+            "
+          ></div>
+          <div class="content">
+            <img
+              src="images/Attack_on_Titan_No_Regrets,_volume_1.jpg"
+              class="cover"
+              alt="Attack on Titan"
+            />
+            <div class="info">
+              <h1>Attack on Titan</h1>
+              <p>L’humanité lutte pour survivre face aux Titans.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/blue lock.webp')"
+          ></div>
+          <div class="content">
+            <img src="images/blue lock.webp" class="cover" alt="Blue Lock" />
+            <div class="info">
+              <h1>Blue Lock</h1>
+              <p>Une compétition extrême pour devenir le meilleur attaquant.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/demon-slayer-cover.jpg')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/demon-slayer-cover.jpg"
+              class="cover"
+              alt="Demon Slayer"
+            />
+            <div class="info">
+              <h1>Demon Slayer</h1>
+              <p>Tanjiro se bat pour sauver sa sœur et vaincre les démons.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/Hunter-x-Hunter-Vol.-34.png')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/Hunter-x-Hunter-Vol.-34.png"
+              class="cover"
+              alt="Hunter x Hunter"
+            />
+            <div class="info">
+              <h1>Hunter x Hunter</h1>
+              <p>Gon part à l’aventure pour retrouver son père.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/kagura-bachi-cover.jpg')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/kagura-bachi-cover.jpg"
+              class="cover"
+              alt="Kagura Bachi"
+            />
+            <div class="info">
+              <h1>Kagura Bachi</h1>
+              <p>Un jeune forgeron se lance sur le chemin de la vengeance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/my-hero-academia-cover.jpg')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/my-hero-academia-cover.jpg"
+              class="cover"
+              alt="My Hero Academia"
+            />
+            <div class="info">
+              <h1>My Hero Academia</h1>
+              <p>Midoriya veut devenir un héros malgré les obstacles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/naruto-cover.avif')"
+          ></div>
+          <div class="content">
+            <img src="images/naruto-cover.avif" class="cover" alt="Naruto" />
+            <div class="info">
+              <h1>Naruto</h1>
+              <p>Un ninja rêve de devenir Hokage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/one-piece-coverjpg.jpg')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/one-piece-coverjpg.jpg"
+              class="cover"
+              alt="One Piece"
+            />
+            <div class="info">
+              <h1>One Piece</h1>
+              <p>Luffy cherche le trésor ultime : le One Piece.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="background-image: url('images/Soul-Eater-Vol.-19.png')"
+          ></div>
+          <div class="content">
+            <img
+              src="images/Soul-Eater-Vol.-19.png"
+              class="cover"
+              alt="Soul Eater"
+            />
+            <div class="info">
+              <h1>Soul Eater</h1>
+              <p>
+                Des meisters et leurs armes affrontent des menaces
+                surnaturelles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="
+              background-image: url('images/the-cover-of-death-note-volume-1.avif');
+            "
+          ></div>
+          <div class="content">
+            <img
+              src="images/the-cover-of-death-note-volume-1.avif"
+              class="cover"
+              alt="Death Note"
+            />
+            <div class="info">
+              <h1>Death Note</h1>
+              <p>Un carnet mortel, une bataille mentale : Light contre L.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div
+            class="bg"
+            style="
+              background-image: url('images/tokyo_ghoul_volume_1_cover.avif');
+            "
+          ></div>
+          <div class="content">
+            <img
+              src="images/tokyo_ghoul_volume_1_cover.avif"
+              class="cover"
+              alt="Tokyo Ghoul"
+            />
+            <div class="info">
+              <h1>Tokyo Ghoul</h1>
+              <p>Kaneki se retrouve coincé entre deux mondes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="articles" class="articles-section">
+      <h2>Articles et Recommandations</h2>
+
+      <div class="articles-carousel">
+        <input type="radio" name="art-slide" id="art-1" checked />
+        <input type="radio" name="art-slide" id="art-2" />
+        <input type="radio" name="art-slide" id="art-3" />
+
+        <div class="articles-track">
+          <div class="articles-page">
+            <article class="article-card">
+              <img
+                src="images/my-hero-academia-cover.jpg"
+                alt="My Hero Academia"
+              />
+              <h4>My Hero Academia</h4>
+              <p>Midoriya rêve de devenir un héros.</p>
+            </article>
+
+            <article class="article-card">
+              <img src="images/one-piece-coverjpg.jpg" alt="One Piece" />
+              <h4>One Piece</h4>
+              <p>Luffy vise le titre de Roi des Pirates.</p>
+            </article>
+
+            <article class="article-card">
+              <img src="images/demon-slayer-cover.jpg" alt="Demon Slayer" />
+              <h4>Demon Slayer</h4>
+              <p>Tanjiro chasse les démons.</p>
+            </article>
+
+            <article class="article-card">
+              <img src="images/kagura-bachi-cover.jpg" alt="Kagura Bachi" />
+              <h4>Kagura Bachi</h4>
+              <p>Un forgeron en quête de vengeance.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/Hunter-x-Hunter-Vol.-34.png"
+                alt="Hunter x Hunter"
+              />
+              <h4>Hunter x Hunter</h4>
+              <p>Gon cherche son père Hunter.</p>
+            </article>
+          </div>
+
+          <div class="articles-page">
+            <article class="article-card">
+              <img
+                src="images/tokyo_ghoul_volume_1_cover.avif"
+                alt="Tokyo Ghoul"
+              />
+              <h4>Tokyo Ghoul</h4>
+              <p>Kaneki devient mi-humain, mi-ghoul.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/the-cover-of-death-note-volume-1.avif"
+                alt="Death Note"
+              />
+              <h4>Death Note</h4>
+              <p>Light et L s’affrontent dans un duel mental.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/Attack_on_Titan_No_Regrets,_volume_1.jpg"
+                alt="Attack on Titan"
+              />
+              <h4>Attack on Titan</h4>
+              <p>L’humanité lutte contre les Titans.</p>
+            </article>
+
+            <article class="article-card">
+              <img src="images/chainsaw-man-cover.webp" alt="Chainsaw Man" />
+              <h4>Chainsaw Man</h4>
+              <p>Un anti-héros chaotique et imprévisible.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/The-Promised-Neverland-Vol.-5.png"
+                alt="Promised Neverland"
+              />
+              <h4>Promised Neverland</h4>
+              <p>Des enfants tentent d’échapper à leur destin.</p>
+            </article>
+          </div>
+
+          <div class="articles-page">
+            <article class="article-card">
+              <img
+                src="images/onepunchman_manga_cover.avif"
+                alt="One Punch Man"
+              />
+              <h4>One Punch Man</h4>
+              <p>Saitama bat tout le monde… trop facilement.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/Kaiju-No-8-Chapter-73.1-Special-Illustration.webp"
+                alt="Kaiju No. 8"
+              />
+              <h4>Kaiju No. 8</h4>
+              <p>Une transformation change tout.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/Quintessential-Quintuplets-Vol.-8.png"
+                alt="Quintessential Quintuplets"
+              />
+              <h4>Quintuplets</h4>
+              <p>Romance et quiproquos.</p>
+            </article>
+
+            <article class="article-card">
+              <img src="images/Bleach-Manga-Cover-683x1024.jpg" alt="Bleach" />
+              <h4>Bleach</h4>
+              <p>Shinigami et combats épiques.</p>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="images/sakamoto-days-volume-7.avif"
+                alt="Sakamoto Days"
+              />
+              <h4>Sakamoto Days</h4>
+              <p>Action, humour et assassins.</p>
+            </article>
+          </div>
+        </div>
+        <label for="art-3" class="carousel-btn next next-1">›</label>
+        <label for="art-2" class="carousel-btn prev prev-1">‹</label>
+
+        <label for="art-1" class="carousel-btn prev prev-2">‹</label>
+        <label for="art-3" class="carousel-btn next next-2">›</label>
+
+        <label for="art-2" class="carousel-btn prev prev-3">‹</label>
+        <label for="art-1" class="carousel-btn next next-3">›</label>
+      </div>
+    </section>
+
+    <section id="recette">
+      <!-- /////////////////////////////////////////////////////////////////////////  Recettes -->
+      <div class="global">
+        <section class="centre" id="recette">
+          <h1>Recettes indiennes</h1>
+          <article class="recette">
+            <div class="recette__div">
+              <h2>Ingrédients</h2>
+              <ol>
+                <li>500 g d'épinards frais (ou 300 g d'épinards surgelés)</li>
+                <li>1 oignon moyen émincé</li>
+                <li>2 gousses d'ail hachées</li>
+                <li>1 petit morceau de gingembre (1 c. à café râpé)</li>
+                <li>2 c. à soupe d'huile (ou ghee)</li>
+                <li>
+                  1 tomate coupée en dés (ou 3 c. à soupe de tomates concassées)
+                </li>
+                <li>1 c. à café de curry en poudre</li>
+                <li>½ c. à café de curcuma</li>
+                <li>½ c. à café de cumin moulu</li>
+                <li>½ c. à café de coriandre moulue</li>
+                <li>Une pincée de piment (facultatif)</li>
+                <li>100 ml de lait de coco ou 2 c. à soupe de crème</li>
+                <li>Sel, poivre</li>
+                <li>Un peu de jus de citron (optionnel)</li>
+              </ol>
+            </div>
+            <div class="recette__div">
+              <h2>Préparation</h2>
+              <ol>
+                <li>
+                  <strong>Préparer les épinards</strong> - Rince les épinards,
+                  enlève les grosses tiges et hache-les légèrement. Si tu
+                  utilises des épinards surgelés, fais-les simplement
+                  décongeler.
+                </li>
+                <li>
+                  <strong>Faire revenir la base aromatique</strong> - Dans une
+                  poêle, chauffe l'huile. Ajoute l'oignon et fais-le revenir
+                  jusqu'à ce qu'il soit doré. Incorpore l'ail et le gingembre,
+                  cuis 1 minute.
+                </li>
+                <li>
+                  <strong>Ajouter les épices</strong> Ajoute le curry, le
+                  curcuma, le cumin, la coriandre et le piment. Fais griller les
+                  épices 30 secondes pour libérer les arômes.
+                </li>
+                <li>
+                  <strong>Ajouter tomates et épinards</strong> - Mets les
+                  tomates et cuis 2 minutes. Ajoute les épinards, mélange et
+                  laisse cuire 5 minutes.
+                </li>
+                <li>
+                  <strong>Crémer le curry</strong> - Verse le lait de coco ou la
+                  crème. Laisse réduire à feu doux 3 à 5 minutes. Ajuste le sel,
+                  le poivre et ajoute un filet de jus de citron si tu veux un
+                  goût plus frais.
+                </li>
+              </ol>
+            </div>
+            <div class="recette__image">
+              <figure class="recette__figure">
+                <img
+                  src="images/epinards-indien.webp"
+                  alt=""
+                  class="recette__img"
+                />
+                <figcaption class="recette__figcaption">
+                  Épinards à l'indienne
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="recette">
+            <div class="recette__div">
+              <h2>Ingrédients</h2>
+              <h3>Base aux épinards</h3>
+              <ol>
+                <li>500 g d'épinards frais (ou 300 g surgelés)</li>
+                <li>1 oignon moyen, haché finement</li>
+                <li>2 gousses d'ail, hachées</li>
+                <li>1 c. à café de gingembre frais râpé</li>
+                <li>2 c. à soupe d'huile ou de ghee</li>
+                <li>
+                  1 tomate moyenne (ou 3 c. à soupe de tomates concassées)
+                </li>
+                <li>1 c. à café de cumin moulu</li>
+                <li>1 c. à café de coriandre moulue</li>
+                <li>½ c. à café de curcuma</li>
+                <li>1 c. à café de garam masala</li>
+                <li>½ c. à café de piment (facultatif)</li>
+                <li>Sel au goût</li>
+              </ol>
+              <h3>Fromage</h3>
+              <ol>
+                <li>
+                  200 à 250 g de paneer (ou halloumi doux en remplacement)
+                </li>
+                <li>
+                  2 à 3 c. à soupe de crème (ou lait de coco pour version sans
+                  produits laitiers)
+                </li>
+              </ol>
+            </div>
+            <div class="recette__div">
+              <h2>Préparation</h2>
+              <ol>
+                <li>Blanchir les épinards (clé pour la couleur)</li>
+                <li>Porte une casserole d'eau à ébullition.</li>
+                <li>Ajoute les épinards 30 à 45 secondes.</li>
+                <li>
+                  Égoutte-les et plonge-les immédiatement dans de l'eau froide.
+                </li>
+                <li>Mixe-les pour obtenir une purée lisse.</li>
+                <li>Préparer le paneer</li>
+                <li>Coupe le paneer en cubes.</li>
+                <li>
+                  Optionnel mais traditionnel : fais-les dorer légèrement dans
+                  un peu d'huile. Réserve.
+                </li>
+                <li>Base aromatique</li>
+                <li>Dans une poêle, chauffe l'huile ou le ghee.</li>
+                <li>
+                  Ajoute l'oignon, fais-le revenir jusqu'à ce qu'il soit bien
+                  doré.
+                </li>
+                <li>Ajoute ail et gingembre, cuis 1 minute.</li>
+                <li>Épices et tomate</li>
+                <li>Incorpore cumin, coriandre, curcuma, piment.</li>
+                <li>
+                  Ajoute la tomate et laisse cuire jusqu'à obtenir une pâte
+                  épaisse.
+                </li>
+                <li>Assemblage</li>
+                <li>Verse la purée d'épinards.</li>
+                <li>Laisse mijoter 5 minutes à feu doux.</li>
+                <li>Ajoute le paneer et la crème.</li>
+                <li>Termine avec le garam masala.</li>
+                <li>Ajuste le sel.</li>
+              </ol>
+            </div>
+            <div class="recette__image">
+              <figure class="recette__figure">
+                <img class="recette__img" src="images/palak-paner.jpg" alt="" />
+                <figcaption class="recette__figcaption">
+                  Palak paneer
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section id="galerie" class="catalog gallery-section">
+      <h2>Galerie de Mangas</h2>
+
+      <input type="checkbox" id="more-manga-toggle" />
+
+      <div class="manga-grid">
+        <div class="manga">
+          <img src="images/demon-slayer-cover.jpg" alt="Demon Slayer" />
+          <h3>Demon Slayer</h3>
+        </div>
+        <div class="manga">
+          <img src="images/jjk-cover.jpg" alt="Jujutsu Kaisen" />
+          <h3>Jujutsu Kaisen</h3>
+        </div>
+        <div class="manga">
+          <img src="images/kagura-bachi-cover.jpg" alt="Kagura Bachi" />
+          <h3>Kagura Bachi</h3>
+        </div>
+        <div class="manga">
+          <img src="images/tokyo_ghoul_volume_1_cover.avif" alt="Tokyo Ghoul" />
+          <h3>Tokyo Ghoul</h3>
+        </div>
+        <div class="manga">
+          <img
+            src="images/Attack_on_Titan_No_Regrets,_volume_1.jpg"
+            alt="Attack on Titan"
+          />
+          <h3>Attack on Titan</h3>
+        </div>
+        <div class="manga">
+          <img src="images/chainsaw-man-cover.webp" alt="Chainsaw Man" />
+          <h3>Chainsaw Man</h3>
+        </div>
+        <div class="manga">
+          <img src="images/Hunter-x-Hunter-Vol.-34.png" alt="Hunter x Hunter" />
+          <h3>Hunter x Hunter</h3>
+        </div>
+        <div class="manga">
+          <img src="images/Bleach-Manga-Cover-683x1024.jpg" alt="Bleach" />
+          <h3>Bleach</h3>
+        </div>
+        <div class="manga">
+          <img
+            src="images/91rOrxdtReL._UF1000,1000_QL80_.jpg"
+            alt="Shangri-La Frontier"
+          />
+          <h3>Shangri-La</h3>
+        </div>
+        <div class="manga">
+          <img
+            src="images/Kaiju-No-8-Chapter-73.1-Special-Illustration.webp"
+            alt="Kaiju No. 8"
+          />
+          <h3>Kaiju No. 8</h3>
+        </div>
+        <div class="manga">
+          <img
+            src="images/Quintessential-Quintuplets-Vol.-8.png"
+            alt="Quintessential Quintuplets"
+          />
+          <h3>Quintuplets</h3>
+        </div>
+        <div class="manga">
+          <img src="images/onepunchman_manga_cover.avif" alt="One Punch Man" />
+          <h3>One Punch Man</h3>
+        </div>
+        <div class="manga">
+          <img src="images/sakamoto-days-volume-7.avif" alt="Sakamoto Days" />
+          <h3>Sakamoto Days</h3>
+        </div>
+        <div class="manga">
+          <img src="images/naruto-cover.avif" alt="Naruto" />
+          <h3>Naruto</h3>
+        </div>
+
+        <label
+          for="more-manga-toggle"
+          class="see-more-btn grid-btn"
+          aria-label="Afficher plus de mangas"
+          >⋯</label
+        >
+      </div>
+
+      <div class="manga-grid extra-manga">
+        <div class="manga">
+          <img src="images/one-piece-coverjpg.jpg" alt="One Piece" />
+          <h3>One Piece</h3>
+        </div>
+        <div class="manga">
+          <img src="images/Soul-Eater-Vol.-19.png" alt="Soul Eater" />
+          <h3>Soul Eater</h3>
+        </div>
+        <div class="manga">
+          <img
+            src="images/the-cover-of-death-note-volume-1.avif"
+            alt="Death Note"
+          />
+          <h3>Death Note</h3>
+        </div>
+        <div class="manga">
+          <img
+            src="images/The-Promised-Neverland-Vol.-5.png"
+            alt="Promised Neverland"
+          />
+          <h3>Promised Neverland</h3>
+        </div>
+        <div class="manga">
+          <img src="images/blue lock.webp" alt="Blue Lock" />
+          <h3>Blue Lock</h3>
+        </div>
+      </div>
+    </section>
+    <section id="tableau" class="table-section">
+      <h2>Top 5 Mangas Populaires</h2>
+
+      <div class="table-container">
+        <table class="mv-table" aria-label="Top 5 mangas">
+          <caption>
+            Classement fictif – Automne 2025
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Rang</th>
+              <th scope="col">Titre</th>
+              <th scope="col">Auteur</th>
+              <th scope="col">Genre</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>One Piece</td>
+              <td>Eiichiro Oda</td>
+              <td>Aventure</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Attack on Titan</td>
+              <td>Hajime Isayama</td>
+              <td>Action</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Demon Slayer</td>
+              <td>Koyoharu Gotouge</td>
+              <td>Fantastique</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Naruto</td>
+              <td>Masashi Kishimoto</td>
+              <td>Ninja</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Jujutsu Kaisen</td>
+              <td>Gege Akutami</td>
+              <td>Surnaturel</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                Données collectées par MangaVerse — Automne 2025
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section id="video" class="video-section">
+      <h2>Regarder les top animes</h2>
+
+      <div class="video-grid">
+        <iframe
+          src="https://www.youtube.com/embed/MCb13lbVGE0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          src="https://www.youtube.com/embed/MGRm4IzK1SQ"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          src="https://www.youtube.com/embed/VQGCKyvzIM4"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="github" class="github-section">
+      <div class="github-container">
+        <h2>GitHub</h2>
+        <p>
+          <strong>Dépôt GitHub :</strong><br />
+          <span class="github-placeholder"
+            >https://github.com/XDZmurph/Axel-Acosta1.git</span
+          >
+        </p>
+
+        <p>
+          <strong>GitHub Pages :</strong><br />
+          <span class="github-placeholder"
+            >https://xdzmurph.github.io/Axel-Acosta1/</span
+          >
+        </p>
+      </div>
+    </section>
+    <section id="inscription" class="footer-inscription">
+      <div class="footer-container">
+        <h1>Rejoignez MangaVerse !</h1>
+        <p>Restez informé des meilleurs mangas chaque semaine.</p>
+
+        <form id="inscription-form" action="#" method="post">
+          <label for="nom">Nom complet</label>
+          <input id="nom" name="nom" type="text" required />
+
+          <label for="email">Courriel</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="naissance">Date de naissance</label>
+          <input id="naissance" name="naissance" type="date" />
+
+          <label for="abonnement">Type d'abonnement</label>
+          <select name="abonnement" id="abonnement">
+            <option value="gratuit">Gratuit</option>
+            <option value="premium">Premium</option>
+          </select>
+
+          <fieldset>
+            <legend>Genres favoris</legend>
+            <label
+              ><input type="checkbox" name="interet" value="action" />
+              Action</label
+            >
+            <label
+              ><input type="checkbox" name="interet" value="fantasy" />
+              Fantasy</label
+            >
+            <label
+              ><input type="checkbox" name="interet" value="romance" />
+              Romance</label
+            >
+          </fieldset>
+
+          <label for="bio">Parlez-nous de vous</label>
+          <textarea id="bio" name="bio" rows="4"></textarea>
+
+          <div class="form-buttons">
+            <button type="submit">Envoyer</button>
+            <button type="reset">Réinitialiser</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer
+      class="mv-footer"
+      role="contentinfo"
+      aria-label="Pied de page principal"
+    >
+      <div class="footer-col">
+        <h3>MangaVerse</h3>
+        <p>Site réalisé dans le cadre du TP2.</p>
+        <p class="credits">Images utilisées à des fins pédagogiques.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liens rapides</h3>
+        <a href="#accueil">Accueil</a>
+        <a href="#articles">Articles</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#video">Vidéo</a>
+        <a href="#github">GitHub</a>
+
+        <a href="#inscription">Inscription</a>
+        <a href="#accueil">Retour en haut</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Réseaux</h3>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Discord</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Adresse</h3>
+        <p>Collège de Maisonneuve</p>
+        <p>3800 Sherbrooke St E, Montréal, QC</p>
+      </div>
+    </footer>
+  </body>
+</html>
